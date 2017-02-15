@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var app = express();
 
 app.set('views', __dirname + '/views');
-app.engine('html', require('ejs').rederFile);
+app.engine('html', require('ejs').renderFile);
 
 app.use(session({secret: 'ssshhhhh'}));
 app.use(bodyParser.json());
